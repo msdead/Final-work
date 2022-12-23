@@ -31,30 +31,27 @@ else
         numb = Convert.ToInt32(Console.ReadLine());
     }
 
-    if (numb > 0 && numb <= 7)
+    string[] userColor = new string[numb];
+    Console.WriteLine("Через ENTER укажите числа соответствующие данным цветам");
+    int like;
+    for (int j = 0; j < userColor.Length; j++)
     {
-        string[] userColor = new string[numb];
-        Console.WriteLine("Через ENTER укажите числа соответствующие данным цветам");
-        int like;
-        for (int j = 0; j < userColor.Length; j++)
+        like = Convert.ToInt32(Console.ReadLine());
+        while (like <= 0 || like > 7)
         {
+            Console.WriteLine("Введено число не соответствующее предоставленному цвету. Укажите числа соответствующие данным цветам: ");
             like = Convert.ToInt32(Console.ReadLine());
-            while (like <= 0 || like > 7)
-            {
-                Console.WriteLine("Введено число не соответствующее предоставленному цвету. Укажите числа соответствующие данным цветам: ");
-                like = Convert.ToInt32(Console.ReadLine());
-            }
-            userColor[j] = color[like - 1];
         }
+        userColor[j] = color[like - 1];
+    }
 
-        Console.WriteLine("Выбранные вами цвета: ");
-        for (int k = 0; k < userColor.Length; k++)
-        {
-            if (k < userColor.Length - 1)
-                Console.Write($"{userColor[k]}, ");
-            else
-                Console.WriteLine(userColor[k]);
-        }
+    Console.WriteLine("Выбранные вами цвета: ");
+    for (int k = 0; k < userColor.Length; k++)
+    {
+        if (k < userColor.Length - 1)
+            Console.Write($"{userColor[k]}, ");
+        else
+            Console.WriteLine(userColor[k]);
     }
 }
 
