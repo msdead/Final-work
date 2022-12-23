@@ -1,13 +1,4 @@
-﻿string[] color =
-{
-    "Красный",
-    "Оранжевый",
-    "Желтый",
-    "Зеленый",
-    "Голубой",
-    "Синий",
-    "Фиолетовый"
-};
+﻿string[] color = { "Красный", "Оранжевый", "Желтый", "Зеленый", "Голубой", "Синий", "Фиолетовый" };
 
 Console.WriteLine("Вам предоставлено семь цветов: ");
 
@@ -19,7 +10,6 @@ for (int i = 0; i < color.Length; i++)
         Console.WriteLine($"{i + 1}. {color[i]}");
 }
 
-
 int count;
 Console.WriteLine("Укажите числом сколько цветов из представленных вам нравятся");
 count = Convert.ToInt32(Console.ReadLine());
@@ -29,7 +19,7 @@ int like;
 for (int j = 0; j < userColor.Length; j++)
 {
     like = Convert.ToInt32(Console.ReadLine());
-    userColor[j] = color[like-1];
+    userColor[j] = color[like - 1];
 }
 
 Console.WriteLine("Выбранные вами цвета: ");
