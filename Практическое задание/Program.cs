@@ -1,12 +1,12 @@
 ﻿string[] color =
 {
-    "1. Красный",
-    "2. Оранжевый",
-    "3. Желтый",
-    "4. Зеленый",
-    "5. Голубой",
-    "6. Синий",
-    "7. Фиолетовый"
+    "Красный",
+    "Оранжевый",
+    "Желтый",
+    "Зеленый",
+    "Голубой",
+    "Синий",
+    "Фиолетовый"
 };
 
 Console.WriteLine("Вам предоставлено семь цветов: ");
@@ -14,9 +14,9 @@ Console.WriteLine("Вам предоставлено семь цветов: ");
 for (int i = 0; i < color.Length; i++)
 {
     if (i < color.Length - 1)
-        Console.Write($"{color[i]}, ");
+        Console.Write($"{i + 1}. {color[i]}, ");
     else
-        Console.WriteLine(color[i]);
+        Console.WriteLine($"{i + 1}. {color[i]}");
 }
 
 
