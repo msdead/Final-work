@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Практическое задание/1.0.0": {
+        "runtime": {
+          "Практическое задание.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Практическое задание/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
